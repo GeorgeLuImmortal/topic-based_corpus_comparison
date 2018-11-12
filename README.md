@@ -3,7 +3,8 @@
 ### Dependencies
 Tested with Python 2.7 and Python 3.5, and requiring the following packages, which are available via PIP:
 
-* Required: [numpy >= 1.8.0](http://www.numpy.org/)
-* Required: [scikit-learn >= 0.14](http://scikit-learn.org/stable/)
-* Required for utility tools: [prettytable >= 0.7.2](https://code.google.com/p/prettytable/)
-* Required for automatic model selection: [gensim >= 0.10.3](https://radimrehurek.com/gensim/)
+* Required: [numpy >= 1.14.3](http://www.numpy.org/)
+* Required: [scikit-learn >= 0.19.1](http://scikit-learn.org/stable/)
+* Required: [pandas >= 0.23.0](https://pandas.pydata.org/)
+* Required: [gensim >= 3.6.0](https://radimrehurek.com/gensim/)
+* Required: [matplotlib >= 2.2.2](https://matplotlib.org/)
