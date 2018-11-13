@@ -33,7 +33,8 @@ After generating LDA models, the next step of TBCC is to build up a word embeddi
 
 	python build_fasttext_model.py --dimensions=300
 	
-The word embedding model will be stored in directory "FASTTEXT_MODEL" by default, you can also play with other parameters. By command python build_fasttext_model.py -h you can see other options such as window size, dimensions.
+The word embedding model will be stored in directory "FASTTEXT_MODEL" by default, you can also play with other parameters. By command ##### python build_fasttext_model.py -h 
+you can see other options such as window size, dimensions.
 
 
 
