@@ -54,16 +54,7 @@ After choosing the best k, we can conduct a topic-based corpus comparison accord
 	
 It should be noted the parameters *k, s, m* is mentory here indicating the number of topics, random_state (these two for targeting the topic model) and the employed statistical discrimination metrics (options are jsd, ext_jsd, chi, rf, ig, gr). The output will be stored in directory "COMPARISON_RESULT/" as well as shown in the console:
 
-43 ------ ['comment', 'content', 'community', 'violates', 'link', 'flag', 'faith', 'form', 'rule', 'remove'] ------ 0
-133 ------ ['fashion', 'always', 'piece', 'show', 'kind', 'friend', 'track', 'everything', 'york', 'name'] ------ 2
-64 ------ ['book', 'story', 'read', 'love', 'author', 'wear', 'character', 'find', 'word', 'english'] ------ 2
-147 ------ ['point', 'thing', 'song', 'little', 'bit', 'away', 'fan', 'though', 'lot', 'moment'] ------ 2
-100 ------ ['album', 'band', 'sound', 'rock', 'singer', 'record', 'festival', 'musician', 'release', 'released'] ------ 2
-23 ------ ['dress', 'street', 'film', 'show', 'love', 'girl', 'wearing', 'shop', 'white', 'shoe'] ------ 2
-149 ------ ['garda', 'arrested', 'house', 'incident', 'dublin', 'station', 'morning', 'scene', 'men', 'co'] ------ 1
-139 ------ ['per', 'cent', 'billion', 'million', 'rate', 'figure', 'month', 'target', 'irish', 'increase'] ------ 1
-25 ------ ['idea', 'talk', 'seems', 'future', 'far', 'style', 'movement', 'rather', 'doe', 'money'] ------ 2
-109 ------ ['growth', 'market', 'business', 'economy', 'month', 'price', 'bn', 'rate', 'company', 'profit'] ------ 2
+
 
 The first column is the index of topic, the second colmun is the words for charactering the topic, and the third colmun is the corpus which the topic belongs to.
 
