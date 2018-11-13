@@ -19,7 +19,7 @@ The first step of TBCC is train sevearl LDA models based on the data located in 
 
 	python build_lda_model.py 5 10 15 20 25 30
 
-It should be noted that you must specify at least one k, or you can input a list of k as shown in above command. There are some other opitons you can specify such as input, output directory (default is directory "LDA_MODELS"), random seed and so on.
+It should be noted that you must specify at least one k, or you can input a list of k as shown in above command. There are some other opitons you can specify such as output directory (default is directory "LDA_MODELS"), random seed and so on.
 	
 	python build_lda_model.py --random_state=2020 5 10 15 20 25 30
 	
@@ -29,7 +29,15 @@ For more details, you can type command
 
 ##### Step 2: Train Fasttext word embedding model
 
-After generating LDA models, the next step of TBCC is to build up a word embedding model for LDA model selection procedures.
+After generating LDA models, the next step of TBCC is to build up a word embedding model for LDA model selection procedure. 
+
+	python build_fasttext_model.py --dimensions=300
+	
+The word embedding model will be stored in directory "FASTTEXT_MODEL" by default, you can also play with other parameters. By command python build_fasttext_model.py -h you can see other options such as window size, dimensions.
+
+
+
+
 
 
 
