@@ -19,7 +19,7 @@ The first step of TBCC is train sevearl LDA models based on the data located in 
 
 	python build_lda_model.py 5 10 15 20 25 30
 
-It should be noted that you must specify at least one k, or you can input a list of k as shown in above command. There are some other opitons you can specify such as output directory (default is directory "LDA_MODELS"), random seed and so on.
+It should be noted that you must specify at least one k, or you can input a list of k (*5 10 15 20 25 30*) as shown in above command. There are some other opitons you can specify such as output directory (default is directory "LDA_MODELS/"), random seed (default is 1984) and so on, as shown below
 	
 	python build_lda_model.py --random_state=2020 5 10 15 20 25 30
 	
@@ -31,12 +31,41 @@ For more details, you can type command
 
 After generating LDA models, the next step of TBCC is to build up a word embedding model for LDA model selection procedure. 
 
-	python build_fasttext_model.py --dimensions=300
+	python build_fasttext_model.py
 	
-The word embedding model will be stored in directory "FASTTEXT_MODEL" by default, you can also play with other parameters. By command 
+The word embedding model will be stored in directory "FASTTEXT_MODEL/" by default, you can also play with other parameters. By command 
 *python build_fasttext_model.py -h* you can see other options such as window size, dimensions.
 
+##### Step 3: Analysis of topic coherence of topic models
 
+The third step is caculating the topic coherence of each topic model for selecting the model with highest topic coherece.
+	
+	python compute_semantic_coherence.py 5 10 15 20 25 30
+	
+The result will be stored in the directory "SEMANTIC_COH/". It should be noted the if you change the random seed when training LDA models (default random seed is 1984), you need to specify it explicitly, since the LDA models are named after random seed and topic numbers.
+
+	python compute_semantic_coherence.py --random-state=2020 5 10 15 20 25 30
+
+##### Step 4: Conduct topic-based corpus comparison
+
+After choosing the best k, we can conduct a topic-based corpus comparison according to various statistical discrimination metrics.
+
+	python topic_based_cc.py -k 160 -s 1984 -m jsd
+	
+It should be noted the parameters *k, s, m* is mentory here indicating the number of topics, random_state (these two for targeting the topic model) and the employed statistical discrimination metrics (options are jsd, ext_jsd, chi, rf, ig, gr). The output will be stored in directory "COMPARISON_RESULT/" as well as shown in the console:
+
+43 ------ ['comment', 'content', 'community', 'violates', 'link', 'flag', 'faith', 'form', 'rule', 'remove'] ------ 0
+133 ------ ['fashion', 'always', 'piece', 'show', 'kind', 'friend', 'track', 'everything', 'york', 'name'] ------ 2
+64 ------ ['book', 'story', 'read', 'love', 'author', 'wear', 'character', 'find', 'word', 'english'] ------ 2
+147 ------ ['point', 'thing', 'song', 'little', 'bit', 'away', 'fan', 'though', 'lot', 'moment'] ------ 2
+100 ------ ['album', 'band', 'sound', 'rock', 'singer', 'record', 'festival', 'musician', 'release', 'released'] ------ 2
+23 ------ ['dress', 'street', 'film', 'show', 'love', 'girl', 'wearing', 'shop', 'white', 'shoe'] ------ 2
+149 ------ ['garda', 'arrested', 'house', 'incident', 'dublin', 'station', 'morning', 'scene', 'men', 'co'] ------ 1
+139 ------ ['per', 'cent', 'billion', 'million', 'rate', 'figure', 'month', 'target', 'irish', 'increase'] ------ 1
+25 ------ ['idea', 'talk', 'seems', 'future', 'far', 'style', 'movement', 'rather', 'doe', 'money'] ------ 2
+109 ------ ['growth', 'market', 'business', 'economy', 'month', 'price', 'bn', 'rate', 'company', 'profit'] ------ 2
+
+The first column is the index of topic, the second colmun is the words for charactering the topic, and the third colmun is the corpus which the topic belongs to.
 
 
 
