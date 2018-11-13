@@ -55,6 +55,8 @@ After choosing the best k, we can conduct a topic-based corpus comparison accord
 It should be noted the parameters *k, s, m* is mentory here indicating the number of topics, random_state (these two for targeting the topic model) and the employed statistical discrimination metrics (options are jsd, ext_jsd, chi, rf, ig, gr). The output will be stored in directory "COMPARISON_RESULT/" as well as shown in the console:
 
 
+![alt text]（https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/COMPARISON_RESULT/result.png）
+
 
 The first column is the index of topic, the second colmun is the words for charactering the topic, and the third colmun is the corpus which the topic belongs to.
 
