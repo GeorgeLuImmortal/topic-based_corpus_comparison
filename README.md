@@ -56,7 +56,7 @@ After choosing the best k, we can conduct a topic-based corpus comparison accord
 It should be noted the parameters *k, s, m* is mentory here indicating the number of topics, random_state (these two for targeting the topic model) and the employed statistical discrimination metrics (options are jsd, ext_jsd, chi, rf, ig, gr). The output will be stored in directory "COMPARISON_RESULT/" as well as shown in the console:
 
 
-![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/COMPARISON_RESULT/result.png)
+![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/COMPARISON_RESULT/comparison_result.png)
 
 
 The first column is the index of topic, the second colmun is the words for charactering the topic, and the third colmun is the corpus index which the topic belongs to.
@@ -69,4 +69,4 @@ We can also visualizae the result via scatter plot exploiting t-SNE to project d
 
 ![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/VISUALIZATION/scatter_plot.png)
 
-It will generate a html file under the directory "VISUALIZATION/" by default, you can open the file using any browser. The different color indicates documents from different corpora and the number is the index of the most discriminative topics selected by TBCC. You can refer to the file in directory "COMPARISON_RESULT/" for the contents of topics, or you can use mouth hover through the html page for the discriptors of the topics as shown in the above figure.
+It will generate a html file under the directory "VISUALIZATION/" by default, you can open the file using any browser. The different color indicates documents from different corpora and the number is the index of the most discriminative topics selected by TBCC. You can refer to the file in directory "COMPARISON_RESULT/" for the contents of topics, or you can use mouth hover through the html page for the discriptors of the topics as shown in the above figure (this is a result of Chi-square, 200 topics).
