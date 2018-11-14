@@ -60,7 +60,11 @@ It should be noted the parameters *k, s, m* is mentory here indicating the numbe
 
 The first column is the index of topic, the second colmun is the words for charactering the topic, and the third colmun is the corpus index which the topic belongs to.
 
+##### Step 5: Visualization
 
+We can also visualizae the result via scatter plot exploiting t-SNE to project documents into a 2-D plane. 
 
+	python visualization.py -k 200 -s 1984 -m jsd
 
+![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/COMPARISON_RESULT/result.png)
 
