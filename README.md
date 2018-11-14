@@ -18,11 +18,11 @@ To perform topic-based corpus comparison, the input corpus of documents should c
 
 The first step of TBCC is train sevearl LDA models based on the data located in directory "data/" with different values of k(number of topics in model).  
 
-	python build_lda_model.py 5 10 15 20 25 30
+	python build_lda_model.py 5 10 20 40 80 160
 
 It should be noted that you must specify at least one k, or you can input a list of k (*5 10 15 20 25 30*) as shown in above command. There are some other opitons you can specify such as output directory (default is directory "LDA_MODELS/"), random seed (default is 1984) and so on, as shown below
 	
-	python build_lda_model.py --random_state=2020 5 10 15 20 25 30
+	python build_lda_model.py --random_state=2020 5 10 20 40 80 160
 	
 For more details, you can type command 	
 	
