@@ -41,17 +41,17 @@ The word embedding model will be stored in directory "FASTTEXT_MODEL/" by defaul
 
 The third step is caculating the topic coherence of each topic model for selecting the model with highest topic coherece.
 	
-	python compute_semantic_coherence.py 5 10 15 20 25 30
+	python compute_semantic_coherence.py 5 10 20 40 80 160 200
 	
 The result will be stored in the directory "SEMANTIC_COH/". It should be noted the if you change the random seed when training LDA models (default random seed is 1984), you need to specify it explicitly, since the LDA models are named after random seed and topic numbers.
 
-	python compute_semantic_coherence.py --random-state=2020 5 10 15 20 25 30
+	python compute_semantic_coherence.py --random-state=2020 5 10 20 40 80 160 200
 
 ##### Step 4: Conduct topic-based corpus comparison
 
 After choosing the best k, we can conduct a topic-based corpus comparison according to various statistical discrimination metrics.
 
-	python topic_based_cc.py -k 160 -s 1984 -m jsd
+	python topic_based_cc.py -k 200 -s 1984 -m jsd
 	
 It should be noted the parameters *k, s, m* is mentory here indicating the number of topics, random_state (these two for targeting the topic model) and the employed statistical discrimination metrics (options are jsd, ext_jsd, chi, rf, ig, gr). The output will be stored in directory "COMPARISON_RESULT/" as well as shown in the console:
 
