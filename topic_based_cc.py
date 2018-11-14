@@ -113,7 +113,7 @@ def main():
             disctinct_descriptors.append(descriptors)
             source_index = np.argmax([word_fre_counter[source][0][i]/sum(word_fre_counter[source][0].values()) for source in word_fre_counter])
             sources.append(source_index)
-            print(i,'-'*6,descriptors)
+            print(i,'-'*6,descriptors,'-'*6,source_index)
 
         df_to_csv = pd.DataFrame()
         df_to_csv['topic'] = [i for i in distinct_topics[:options.no_of_d_topics]]
@@ -133,7 +133,7 @@ def main():
             disctinct_descriptors.append(descriptors)
             source_index = np.argmax([word_fre_counter[source][0][i]/sum(word_fre_counter[source][0].values()) for source in word_fre_counter])
             sources.append(source_index)
-            print(i,'-'*6,descriptors)
+            print(i,'-'*6,descriptors,'-'*6,source_index)
 
         df_to_csv = pd.DataFrame()
         df_to_csv['topic'] = [i for i in distinct_topics[:options.no_of_d_topics]]
@@ -152,7 +152,7 @@ def main():
             disctinct_descriptors.append(descriptors)
             source_index = np.argmax([word_fre_counter[source][0][i]/sum(word_fre_counter[source][0].values()) for source in word_fre_counter])
             sources.append(source_index)
-            print(i,'-'*6,descriptors)
+            print(i,'-'*6,descriptors,'-'*6,source_index)
 
         df_to_csv = pd.DataFrame()
         df_to_csv['topic'] = [i for i in distinct_topics[:options.no_of_d_topics]]
