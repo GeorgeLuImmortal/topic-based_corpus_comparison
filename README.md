@@ -58,7 +58,7 @@ It should be noted the parameters *k, s, m* is mentory here indicating the numbe
 ![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/COMPARISON_RESULT/result.png)
 
 
-The first column is the index of topic, the second colmun is the words for charactering the topic, and the third colmun is the corpus which the topic belongs to.
+The first column is the index of topic, the second colmun is the words for charactering the topic, and the third colmun is the corpus index which the topic belongs to.
 
 
 
