@@ -66,5 +66,5 @@ We can also visualizae the result via scatter plot exploiting t-SNE to project d
 
 	python visualization.py -k 200 -s 1984 -m jsd
 
-![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/COMPARISON_RESULT/result.png)
+![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/VISUALIZATION/scatter.png)
 
