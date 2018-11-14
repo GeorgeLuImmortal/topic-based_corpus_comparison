@@ -8,6 +8,7 @@ Tested Python 3.6, and requiring the following packages, which are available via
 * Required: [pandas >= 0.23.0](https://pandas.pydata.org/)
 * Required: [gensim >= 3.6.0](https://radimrehurek.com/gensim/)
 * Required: [matplotlib >= 2.2.2](https://matplotlib.org/)
+* Required: [bokeh >= 0.12.16](https://bokeh.pydata.org/en/latest/)
 
 ### Basic Usage
 
