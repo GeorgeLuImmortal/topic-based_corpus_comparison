@@ -62,9 +62,10 @@ The first column is the index of topic, the second colmun is the words for chara
 
 ##### Step 5: Visualization
 
-We can also visualizae the result via scatter plot exploiting t-SNE to project documents into a 2-D plane. 
+We can also visualizae the result via scatter plot exploiting t-SNE to project documents into a 2-D plane. The parameters are the same as above for example, k is the number of topic, s is the random state and m means the metric applied.
 
 	python visualization.py -k 200 -s 1984 -m jsd
 
 ![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/VISUALIZATION/scatter.png)
 
+It will generate a html file under the directory "VISUALIZATION/" by default, you can open the file using any browser. The different color indicates documents from different corpora and the number is the index of the most discriminative topics selected by TBCC. You can refer to the file in directory "COMPARISON_RESULT/" for the contents of topics, or you can use mouth hover through the html page for the discriptors of the topics.
