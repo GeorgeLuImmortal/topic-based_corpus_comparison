@@ -68,4 +68,4 @@ We can also visualizae the result via scatter plot exploiting t-SNE to project d
 
 ![alt text](https://github.com/GeorgeLuImmortal/topic-based_corpus_comparison/blob/master/VISUALIZATION/scatter.png)
 
-It will generate a html file under the directory "VISUALIZATION/" by default, you can open the file using any browser. The different color indicates documents from different corpora and the number is the index of the most discriminative topics selected by TBCC. You can refer to the file in directory "COMPARISON_RESULT/" for the contents of topics, or you can use mouth hover through the html page for the discriptors of the topics.
+It will generate a html file under the directory "VISUALIZATION/" by default, you can open the file using any browser. The different color indicates documents from different corpora and the number is the index of the most discriminative topics selected by TBCC. You can refer to the file in directory "COMPARISON_RESULT/" for the contents of topics, or you can use mouth hover through the html page for the discriptors of the topics as shown in the above figure.
