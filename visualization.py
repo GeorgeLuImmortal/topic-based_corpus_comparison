@@ -71,7 +71,7 @@ def visualization(tsne_lda,_lda_keys,descriptors,divergent_keys,divergent_topics
               legend='topic', source=source,fill_alpha=0.3,radius=0.2)
     
     hover = p.select(dict(type=HoverTool))
-    hover.tooltips = """<font size='5pt'>Topic: @topic <br /> Descriptors: @descriptors</font>"""
+    hover.tooltips = """<font size='5pt'>Corpus: @topic <br /> Descriptors: @descriptors</font>"""
     
     for i in range(len(divergent_topics)):
         p.text(coordinates[i][0]-5, coordinates[i][1], [divergent_topics[i]],text_color="black",text_font_size='50pt',text_font_style='bold')
