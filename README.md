@@ -1,6 +1,6 @@
 # topic-based_corpus_comparison
 
-This repository associated with paper [Lu, J., Henchion, M. and Mac Namee, B., 2019. A Topic-Based Approach to Multiple Corpus Comparison.] (http://ceur-ws.org/Vol-2563/aics_8.pdf)
+This repository associated with paper [Lu, J., Henchion, M. and Mac Namee, B., 2019. A Topic-Based Approach to Multiple Corpus Comparison.](http://ceur-ws.org/Vol-2563/aics_8.pdf)
 
 ### Dependencies
 Tested Python 3.6, and requiring the following packages, which are available via PIP:
